@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Dec 2023 23:55:28 +0800</lastBuildDate><atom:link href="https://h2o-2.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Dec 2023 03:37:28 +0800</lastBuildDate><atom:link href="https://h2o-2.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在开始之前你需要阅读的</title>
       <link>https://h2o-2.org/posts/plesae-readme/</link>
@@ -19,6 +19,15 @@
       
       <guid>https://h2o-2.org/posts/plesae-readme/</guid>
       <description>在我们开始之前请先阅读我</description>
+    </item>
+    
+    <item>
+      <title>mobox的安装和使用</title>
+      <link>https://h2o-2.org/posts/mobox/</link>
+      <pubDate>Thu, 14 Dec 2023 03:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/mobox/</guid>
+      <description>mobox的简短教程</description>
     </item>
     
     <item>
@@ -81,15 +90,6 @@ QQ 563659964
 837889765
 682830898
 我们更建议您加入QQ频道</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://h2o-2.org/posts/mobox/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://h2o-2.org/posts/mobox/</guid>
-      <description></description>
     </item>
     
     
