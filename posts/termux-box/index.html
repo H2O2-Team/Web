@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Termux-Box的安装和使用 | H2O2 Team</title>
+<meta name="keywords" content="box64, termux-box">
+<meta name="description" content="我想这个教程还没写完就已经老了（">
+<meta name="author" content="V">
+<link rel="canonical" href="https://h2o-2.org/posts/termux-box/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.50fa6a4ba769a25edefb62c0b1b896ff33ea0573bb3c8ec3ba1fc52a2f307662.css" integrity="sha256-UPpqS6dpol7e&#43;2LAsbiW/zPqBXO7PI7Duh/FKi8wdmI=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://h2o-2.org/img/favicon.webp">
+<link rel="icon" type="image/png" sizes="16x16" href="https://h2o-2.org/img/favicon.webp">
+<link rel="icon" type="image/png" sizes="32x32" href="https://h2o-2.org/img/favicon.webp">
+<link rel="apple-touch-icon" href="https://h2o-2.org/apple-touch-icon.png">
+<link rel="mask-icon" href="https://h2o-2.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Termux-Box的安装和使用" />
+<meta property="og:description" content="我想这个教程还没写完就已经老了（" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://h2o-2.org/posts/termux-box/" /><meta property="og:image" content="https://h2o-2.org/papermod-cover.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-12-10T23:37:28+08:00" />
+<meta property="article:modified_time" content="2023-12-10T23:37:28+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://h2o-2.org/papermod-cover.png"/>
+
+<meta name="twitter:title" content="Termux-Box的安装和使用"/>
+<meta name="twitter:description" content="我想这个教程还没写完就已经老了（"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://h2o-2.org/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Termux-Box的安装和使用",
+      "item": "https://h2o-2.org/posts/termux-box/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Termux-Box的安装和使用",
+  "name": "Termux-Box的安装和使用",
+  "description": "我想这个教程还没写完就已经老了（",
+  "keywords": [
+    "box64", "termux-box"
+  ],
+  "articleBody": "我想这个教程还没写完就已经老了（\n什么是Termux-Box？Termux-Box是一个可以帮你快速在Termux上配置好Linux环境来运行Box64的一个项目\n项目地址\n这篇文章的写作目的即为了让你更好的理解安装与使用Termux-Box\n因为教程中使用的链接被GFW阻断，中国大陆地区（不含中国香港、中国澳门、中国台湾）请使用VPN或其他绕过GFW封锁\n需要准备的🤔 安装Termux、Termux-x11 准备 首先打开Termux来申请储存权限，输入：\ntermux-setup-storage 授予Termux储存权限\n然后更新一下Termux的包\npkg update \u0026\u0026 pkg upgrade 安装 准备完毕后，在Termux中输入官方的安装命令\ncurl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install \u0026\u0026 chmod +x x \u0026\u0026 ./x 安装完成后，如果以后要启动，输入\ntermux-box 配置 更新box64兼容层 首先下载压缩包，然后将其解压到/storage/emulatede/0/Download下\n然后打开Termux-box，在菜单内输入6进入容器的终端模式\n然后输入以下命令\n注意：每行都是一条单独的命令\ncd /sdcard/Dowmload mv box86 /usr/local/bin/ mv box64 /usr/local/bin/ 完成后输入\nexit 退出即可\n修改部分设置 打开Termux-box，在菜单内输入5进入容器的设置修改页面\n先输入10关闭 services\n汉化 下载中文汉化包并解压到/storage/emulatede/0/Download的一个不含中文字符的文件夹中\n打开Termux-box，在菜单内输入5进入容器的设置修改页面\n然后输入4修改语言\n输入\nzh_CN 然后输入else返回主菜单\n输入1启动Termux-box\n然后重启容器后，中文显示就恢复正常\n太困了下次再接着写（\n",
+  "wordCount" : "63",
+  "inLanguage": "en",
+  "datePublished": "2023-12-10T23:37:28+08:00",
+  "dateModified": "2023-12-10T23:37:28+08:00",
+  "author":[{
+    "@type": "Person",
+    "name": "V"
+  }],
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://h2o-2.org/posts/termux-box/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "H2O2 Team",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://h2o-2.org/img/favicon.webp"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://h2o-2.org" accesskey="h" title="H2O2 Team (Alt + H)">H2O2 Team</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://h2o-2.org/archives" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://h2o-2.org/public-proxy/" title="公共代理">
+                    <span>公共代理</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://h2o-2.org/search/" title="搜索">
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://h2o-2.org/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://h2o-2.org">Home</a>&nbsp;»&nbsp;<a href="https://h2o-2.org/posts/">Posts</a></div>
+    <h1 class="post-title">
+      Termux-Box的安装和使用
+    </h1>
+    <div class="post-description">
+      我想这个教程还没写完就已经老了（
+    </div>
+    <div class="post-meta"><span title='2023-12-10 23:37:28 +0800 +0800'>December 10, 2023</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;V&nbsp;|&nbsp;<a href="https://github.com/Ryan-Hu-233/H2O2-Team-Web/posts/termux-box.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+
+</div>
+  </header> <div class="toc">
+    <details  open>
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e9%9c%80%e8%a6%81%e5%87%86%e5%a4%87%e7%9a%84" aria-label="需要准备的🤔">需要准备的🤔</a></li>
+                <li>
+                    <a href="#%e5%87%86%e5%a4%87" aria-label="准备">准备</a></li>
+                <li>
+                    <a href="#%e5%ae%89%e8%a3%85" aria-label="安装">安装</a></li>
+                <li>
+                    <a href="#%e9%85%8d%e7%bd%ae" aria-label="配置">配置</a><ul>
+                        
+                <li>
+                    <a href="#%e6%9b%b4%e6%96%b0box64%e5%85%bc%e5%ae%b9%e5%b1%82" aria-label="更新box64兼容层">更新box64兼容层</a></li>
+                <li>
+                    <a href="#%e4%bf%ae%e6%94%b9%e9%83%a8%e5%88%86%e8%ae%be%e7%bd%ae" aria-label="修改部分设置">修改部分设置</a></li>
+                <li>
+                    <a href="#%e6%b1%89%e5%8c%96" aria-label="汉化">汉化</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>我想这个教程还没写完就已经老了（</p>
+<p>什么是Termux-Box？Termux-Box是一个可以帮你快速在Termux上配置好Linux环境来运行Box64的一个项目</p>
+<p><a href="https://github.com/olegos2/termux-box">项目地址</a></p>
+<p>这篇文章的写作目的即为了让你更好的理解安装与使用Termux-Box</p>
+<blockquote>
+<p><strong>因为教程中使用的链接被GFW阻断，中国大陆地区（不含中国香港、中国澳门、中国台湾）请使用VPN或其他绕过GFW封锁</strong></p>
+</blockquote>
+<h1 id="需要准备的">需要准备的🤔<a hidden class="anchor" aria-hidden="true" href="#需要准备的">#</a></h1>
+<ul>
+<li>安装<a href="https://f-droid.org/repo/com.termux_118.apk">Termux</a>、<a href="https://raw.githubusercontent.com/olegos2/termux-box/main/components/termux-x11-arm64-v8a-debug.apk">Termux-x11</a></li>
+</ul>
+<h1 id="准备">准备<a hidden class="anchor" aria-hidden="true" href="#准备">#</a></h1>
+<p>首先打开Termux来申请储存权限，输入：</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">termux-setup-storage
+</code></pre><p>授予Termux储存权限</p>
+<p><img loading="lazy" src="https://picshack.net/ib/oZGVRkZ2eM.jpg" alt=""  />
+</p>
+<p>然后更新一下Termux的包</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">pkg update &amp;&amp; pkg upgrade
+</code></pre><h1 id="安装">安装<a hidden class="anchor" aria-hidden="true" href="#安装">#</a></h1>
+<p>准备完毕后，在Termux中输入官方的安装命令</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">curl -s -o x https://raw.githubusercontent.com/olegos2/termux-box/main/install &amp;&amp; chmod +x x &amp;&amp; ./x
+</code></pre><p><img loading="lazy" src="https://picshack.net/ib/3tfUU3zh5S.jpg" alt=""  />
+安装完成后，如果以后要启动，输入</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">termux-box
+</code></pre><h1 id="配置">配置<a hidden class="anchor" aria-hidden="true" href="#配置">#</a></h1>
+<h2 id="更新box64兼容层">更新box64兼容层<a hidden class="anchor" aria-hidden="true" href="#更新box64兼容层">#</a></h2>
+<p>首先下载<a href="https://alist.vofficial233.com/d/Exagear%20%26%20box64/Box86%20Box64/termux-box%20box64droid%20%E9%83%A8%E5%88%86%E8%A1%A5%E4%B8%81/%E6%96%B0box64%E5%85%BC%E5%AE%B9%E5%B1%82.zip">压缩包</a>，然后将其解压到<code>/storage/emulatede/0/Download</code>下</p>
+<p>然后打开Termux-box，在菜单内输入6进入容器的终端模式</p>
+<p><img loading="lazy" src="https://picshack.net/ib/eooaC0Ld52.jpg" alt=""  />
+然后输入以下命令</p>
+<blockquote>
+<p>注意：每行都是一条单独的命令</p>
+</blockquote>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">cd /sdcard/Dowmload
+mv box86 /usr/local/bin/
+mv box64 /usr/local/bin/
+</code></pre><p>完成后输入</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">exit
+</code></pre><p>退出即可</p>
+<h2 id="修改部分设置">修改部分设置<a hidden class="anchor" aria-hidden="true" href="#修改部分设置">#</a></h2>
+<p>打开Termux-box，在菜单内输入5进入容器的设置修改页面</p>
+<p><img loading="lazy" src="https://picshack.net/ib/pw7wAFJBvB.jpg" alt=""  />
+</p>
+<p>先输入10关闭 services</p>
+<h2 id="汉化">汉化<a hidden class="anchor" aria-hidden="true" href="#汉化">#</a></h2>
+<p>下载<a href="https://alist.vofficial233.com/d/Exagear%20%26%20box64/Box86%20Box64/termux-box%20box64droid%20%E9%83%A8%E5%88%86%E8%A1%A5%E4%B8%81/termux-box%E6%B1%89%E5%8C%96%20(1).zip">中文汉化包</a>并解压到<code>/storage/emulatede/0/Download</code>的一个不含中文字符的文件夹中</p>
+<p>打开Termux-box，在菜单内输入5进入容器的设置修改页面</p>
+<p>然后输入4修改语言</p>
+<p>输入</p>
+<pre tabindex="0"><code class="language-auto" data-lang="auto">zh_CN
+</code></pre><p><img loading="lazy" src="https://picshack.net/ib/MU4XcM4O5k.jpg" alt=""  />
+然后输入<code>else</code>返回主菜单</p>
+<p>输入1启动Termux-box</p>
+<p><img loading="lazy" src="https://picshack.net/ib/QkrqXzNwfA.jpg" alt=""  />
+然后重启容器后，中文显示就恢复正常</p>
+<p>太困了下次再接着写（</p>
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://h2o-2.org/tags/box64/">box64</a></li>
+      <li><a href="https://h2o-2.org/tags/termux-box/">termux-box</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="https://h2o-2.org/posts/tmoe-install-linux/">
+    <span class="title">« Prev</span>
+    <br>
+    <span>Box64入门（1）在Android手机上使用Tmoe安装Arm64&#43;Linux</span>
+  </a>
+  <a class="next" href="https://h2o-2.org/posts/exagear-old/">
+    <span class="title">Next »</span>
+    <br>
+    <span>一些旧的Exagear教程</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="https://h2o-2.org">H2O2 Team</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

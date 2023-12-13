@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>box64 on H2O2 Team</title>
+    <link>https://h2o-2.org/categories/box64/</link>
+    <description>Recent content in box64 on H2O2 Team</description>
+    <image>
+      <title>H2O2 Team</title>
+      <url>https://h2o-2.org/papermod-cover.png</url>
+      <link>https://h2o-2.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Dec 2023 23:55:28 +0800</lastBuildDate><atom:link href="https://h2o-2.org/categories/box64/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在开始之前你需要阅读的</title>
+      <link>https://h2o-2.org/posts/plesae-readme/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/plesae-readme/</guid>
+      <description>在我们开始之前请先阅读我</description>
+    </item>
+    
+    <item>
+      <title>如何安装Exagear/Wintalor</title>
+      <link>https://h2o-2.org/posts/exagear-winlator-install/</link>
+      <pubDate>Sun, 10 Dec 2023 23:55:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/exagear-winlator-install/</guid>
+      <description>还不会安装Exagear/Wintalor吗？🤔</description>
+    </item>
+    
+    <item>
+      <title>Box64入门（1）在Android手机上使用Tmoe安装Arm64&#43;Linux</title>
+      <link>https://h2o-2.org/posts/tmoe-install-linux/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/tmoe-install-linux/</guid>
+      <description>并不是很建议用这种方法自己安装Linux手搓box</description>
+    </item>
+    
+    <item>
+      <title>Termux-Box的安装和使用</title>
+      <link>https://h2o-2.org/posts/termux-box/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/termux-box/</guid>
+      <description>我想这个教程还没写完就已经老了（</description>
+    </item>
+    
+  </channel>
+</rss>

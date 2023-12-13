@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>H2O2 Team</title>
+    <link>https://h2o-2.org/</link>
+    <description>Recent content on H2O2 Team</description>
+    <image>
+      <title>H2O2 Team</title>
+      <url>https://h2o-2.org/papermod-cover.png</url>
+      <link>https://h2o-2.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Dec 2023 23:55:28 +0800</lastBuildDate><atom:link href="https://h2o-2.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在开始之前你需要阅读的</title>
+      <link>https://h2o-2.org/posts/plesae-readme/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/plesae-readme/</guid>
+      <description>在我们开始之前请先阅读我</description>
+    </item>
+    
+    <item>
+      <title>公共代理如何使用</title>
+      <link>https://h2o-2.org/posts/proxy-used/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/proxy-used/</guid>
+      <description>这个还需要教你吗？🤔</description>
+    </item>
+    
+    <item>
+      <title>如何安装Exagear/Wintalor</title>
+      <link>https://h2o-2.org/posts/exagear-winlator-install/</link>
+      <pubDate>Sun, 10 Dec 2023 23:55:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/exagear-winlator-install/</guid>
+      <description>还不会安装Exagear/Wintalor吗？🤔</description>
+    </item>
+    
+    <item>
+      <title>Box64入门（1）在Android手机上使用Tmoe安装Arm64&#43;Linux</title>
+      <link>https://h2o-2.org/posts/tmoe-install-linux/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/tmoe-install-linux/</guid>
+      <description>并不是很建议用这种方法自己安装Linux手搓box</description>
+    </item>
+    
+    <item>
+      <title>Termux-Box的安装和使用</title>
+      <link>https://h2o-2.org/posts/termux-box/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/termux-box/</guid>
+      <description>我想这个教程还没写完就已经老了（</description>
+    </item>
+    
+    <item>
+      <title>一些旧的Exagear教程</title>
+      <link>https://h2o-2.org/posts/exagear-old/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/exagear-old/</guid>
+      <description>懒得改</description>
+    </item>
+    
+    <item>
+      <title>公共代理</title>
+      <link>https://h2o-2.org/public-proxy/</link>
+      <pubDate>Sun, 10 Dec 2023 00:44:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/public-proxy/</guid>
+      <description>用前须知： 请勿在国内社交、视频APP传播、炫耀，否则后果自负
+Telegram代理 请在Telegram APP内打开链接
+https://t.me/proxy?server=8.218.189.74&amp;amp;port=443&amp;amp;secret=eeeabb2a457c69f0f96606923dc115734e7777772e6d6963726f736f66742e636f6d https://t.me/proxy?server=193.218.201.111&amp;amp;port=2023&amp;amp;secret=ee271116ba4912b386579a80215f619faa62353230653163316138306135373764363938336365303533366261653463642e636f6d 公共 Mihomo、V2ay、SurfBoard通用订阅： （每月1000G流量） 订阅链接
+自建 Mihomo系订阅链接： https://v1.mk/Yg1dXPn
+V2ray系订阅链接： https://v1.mk/csSlDeC
+Surfbroad订阅链接： https://v1.mk/zjvgaVT
+代理APP 快连VPN破解版： 下载线路1
+下载线路2
+毛豆VPN破解版： 下载线路1
+下载线路2</description>
+    </item>
+    
+    <item>
+      <title>关于我们</title>
+      <link>https://h2o-2.org/about/</link>
+      <pubDate>Sun, 10 Dec 2023 00:44:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/about/</guid>
+      <description>感谢这些人为网站做出的贡献： Niko、東雪蓮Offical、V
+以及所有为box64/Exagear无私付出的大家！
+我们在社交平台上的群组
+国内 QQ频道： https://pd.qq.com/s/dj8edw94i
+QQ 563659964
+837889765
+682830898
+我们更建议您加入QQ频道</description>
+    </item>
+    
+    
+    
+  </channel>
+</rss>

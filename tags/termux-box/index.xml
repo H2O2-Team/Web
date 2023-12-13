@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>termux-box on H2O2 Team</title>
+    <link>https://h2o-2.org/tags/termux-box/</link>
+    <description>Recent content in termux-box on H2O2 Team</description>
+    <image>
+      <title>H2O2 Team</title>
+      <url>https://h2o-2.org/papermod-cover.png</url>
+      <link>https://h2o-2.org/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Dec 2023 23:37:28 +0800</lastBuildDate><atom:link href="https://h2o-2.org/tags/termux-box/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Termux-Box的安装和使用</title>
+      <link>https://h2o-2.org/posts/termux-box/</link>
+      <pubDate>Sun, 10 Dec 2023 23:37:28 +0800</pubDate>
+      
+      <guid>https://h2o-2.org/posts/termux-box/</guid>
+      <description>我想这个教程还没写完就已经老了（</description>
+    </item>
+    
+  </channel>
+</rss>
