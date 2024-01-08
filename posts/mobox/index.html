@@ -98,8 +98,8 @@
   "keywords": [
     "box64", "mobox"
   ],
-  "articleBody": "最近termux-box的作者发布了似乎是作为代替termux-box的新玩具mobox，听说表现效果要比termux-box还好一些，那么我们装一个试试吧\n项目地址\n视频版教程\n准备 安装Termux、Termux-x11、Input Bridge 确保你当前可以顺畅连接到Github 因为教程中使用的链接被GFW阻断，中国大陆地区（不含中国香港、中国澳门、中国台湾）请使用VPN或其他绕过GFW封锁\n安装 首先打开Termux来申请储存权限，输入：\ntermux-setup-storage 授予Termux储存权限\n然后更新一下Termux的包\npkg update \u0026\u0026 pkg upgrade 更新后，输入官方的安装命令安装\ncurl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install \u0026\u0026 . ~/x 当看到To start - type \"mobox\"时即安装成功\n开始使用 输入\nmobox 来启动mobox\nmobox启动界面的翻译如下图 mobox设置界面的翻译如下图 下面我们开始设置，如果手机有Root，先进入设置选择6的Root设置，选择2\noom Adjuster (PREVENT TERMUX KILL)防止termux被杀死\n然后退出，选择4（系统设置） 翻译如下\n1.更改分辨率\n2.更改处理器核心\n3.更改语言\n4.更改HUD显示\n5.a7xx闪烁修复（8gen1及以上选择）\n6.更改 WSI_PRESENT_MOOE\n更改中文 下载中文汉化包并解压到/storage/emulatede/0/Download的一个不含中文字符的文件夹中\n然后再到mobox的设置中更改语言，输入\nzh_CN 安装驱动 打开左下角的起点，打开Install，安装dxvk和turnip zink\n目前还没有测试过VirGL（因为手里都是骁龙懒得测了 :p）\n以上只是基础设置，你可以自己摸索着玩玩别的设置 未完……\n",
-  "wordCount" : "64",
+  "articleBody": "最近termux-box的作者发布了似乎是作为代替termux-box的新玩具mobox，听说表现效果要比termux-box还好一些，那么我们装一个试试吧\n项目地址\n视频版教程\n准备 安装Termux、Termux-x11、Input Bridge 确保你当前可以顺畅连接到Github 因为教程中使用的链接被GFW阻断，中国大陆地区（不含中国香港、中国澳门、中国台湾）请使用VPN或其他绕过GFW封锁\n安装 首先打开Termux来申请储存权限，输入：\ntermux-setup-storage 授予Termux储存权限\n然后更新一下Termux的包\npkg update \u0026\u0026 pkg upgrade -y 更新后，输入官方的安装命令安装\ncurl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install \u0026\u0026 . ~/x 当看到To start - type \"mobox\"时即安装成功\n开始使用 输入\nmobox 来启动mobox\nmobox启动界面的翻译如下图 mobox设置界面的翻译如下图 下面我们开始设置，如果手机有Root，先进入设置选择6的Root设置，选择2\noom Adjuster (PREVENT TERMUX KILL)防止termux被杀死\n然后退出，选择4（系统设置） 翻译如下\n1.更改分辨率\n2.更改处理器核心\n3.更改语言\n4.更改HUD显示\n5.a7xx闪烁修复（8gen1及以上选择）\n6.更改 WSI_PRESENT_MOOE\n更改中文 下载中文汉化包并解压到/storage/emulatede/0/Download的一个不含中文字符的文件夹中\n然后再到mobox的设置中更改语言，输入\nzh_CN 安装驱动 打开左下角的起点，打开Install，安装dxvk和turnip zink\n目前还没有测试过VirGL（因为手里都是骁龙懒得测了 :p）\n以上只是基础设置，你可以自己摸索着玩玩别的设置 未完……\n",
+  "wordCount" : "65",
   "inLanguage": "en",
   "datePublished": "2023-12-14T03:37:28+08:00",
   "dateModified": "2023-12-14T03:37:28+08:00",
@@ -255,7 +255,7 @@
 <p><img loading="lazy" src="https://img.h2o-2.org/termux-box/termux-box-1.webp" alt=""  />
 </p>
 <p>然后更新一下Termux的包</p>
-<pre tabindex="0"><code class="language-auto" data-lang="auto">pkg update &amp;&amp; pkg upgrade
+<pre tabindex="0"><code class="language-auto" data-lang="auto">pkg update &amp;&amp; pkg upgrade -y
 </code></pre><p>更新后，输入官方的安装命令安装</p>
 <pre tabindex="0"><code class="language-auto" data-lang="auto">curl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install &amp;&amp; . ~/x
 </code></pre><p>当看到<code>To start - type &quot;mobox&quot;</code>时即安装成功</p>
